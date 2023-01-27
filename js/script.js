@@ -12,13 +12,15 @@ let personalMovieDB = {
     privat: false
 };
 
-let movieName = prompt("What's a movie you've seen recently?", "Movie name");
+let a = prompt("What's a movie you've seen recently?", "Movie name");
 let movieRating = prompt("How much do you rate it out of 10? (Decimals allowed):", "(7.2 ex.)");
-personalMovieDB.movies[movieName] = movieRating;
+personalMovieDB.movies[a] = movieRating;
 
-movieName = prompt("What's a movie you've seen recently?", "Movie name");
+let b = prompt("What's a movie you've seen recently?", "Movie name");
 movieRating = prompt("How much do you rate it out of 10? (Decimals allowed):", "(7.2 ex.)");
-personalMovieDB.movies[movieName] = movieRating;
+personalMovieDB.movies[b] = movieRating;
 
 
 console.log(personalMovieDB.movies);
+
+(personalMovieDB.movies[a] === "9") ? console.log("Nice choice!") : console.log("Joey disapproves");
